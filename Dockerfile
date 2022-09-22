@@ -1,11 +1,12 @@
 FROM strapi/base:14
+FROM node:14.18.0-alpine as node
 
 WORKDIR /opt/app
 
 COPY ./package.json ./
 COPY ./package-lock.json ./
 
-RUN npm install --prod
+RUN npm install --verbose --prod
 
 RUN npx browserslist@latest --update-db
 

@@ -32,14 +32,6 @@ jobs:
           context: .
           push: true
           tags: mauricioaires/api:latest
-        
-      - 
-      env_file: 
-        - ../.env
-      environment:
-        DOCKER_BUILDKIT: 1
-        COMPOSE_DOCKER_CLI_BUILD: 1
-
       -
         name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
