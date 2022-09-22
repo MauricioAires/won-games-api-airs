@@ -32,7 +32,8 @@
     "strapi-provider-email-nodemailer": "^3.6.2",
     "strapi-provider-upload-cloudinary": "^3.6.2",
     "strapi-utils": "3.6.2",
-    "stripe": "^8.148.0"
+    "stripe": "^8.148.0",
+    "yarn": "^1.22.19"
   },
   "author": {
     "name": "A Strapi developer"
