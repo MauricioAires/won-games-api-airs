@@ -2,8 +2,6 @@
 
 # React Avançado - Won Games API
 
-This is the API to create the Won Games Store from [React Avançado course](https://reactavancado.com.br/).
-
 ## Requirements
 
 This project uses [PostgreSQL](https://www.postgresql.org/), so, in order to make it working, install in your local machine or use Docker.
