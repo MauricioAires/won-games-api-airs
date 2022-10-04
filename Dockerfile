@@ -1,5 +1,7 @@
 FROM strapi/base:14
 
+RUN apk add --no-cache python2 g++ make
+
 WORKDIR /opt/app
 
 COPY ./package.json ./
