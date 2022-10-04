@@ -7,7 +7,7 @@ COPY ./yarn.lock ./
 
 RUN rm -rf node_modules
 
-RUN yarn install --pure-lockfile
+RUN yarn install --frozen-lockfile
 
 RUN npx browserslist@latest --update-db
 
