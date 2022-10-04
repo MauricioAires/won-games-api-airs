@@ -7,7 +7,7 @@ COPY ./yarn.lock ./
 
 RUN yarn install --prod
 
-RUN npx browserslist@latest --update-db
+# RUN npx browserslist@latest --update-db
 
 COPY . .
 
