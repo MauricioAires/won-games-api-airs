@@ -1,13 +1,13 @@
 FROM strapi/base:14
 
-RUN apk add --no-cache python2 g++ make
-
 WORKDIR /opt/app
 
 COPY ./package.json ./
 COPY ./yarn.lock ./
 
-RUN yarn install --prod
+RUN rm -rf node_modules
+
+RUN yarn install --pure-lockfile
 
 RUN npx browserslist@latest --update-db
 
